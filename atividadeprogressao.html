@@ -18,7 +18,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #9fafff;
+  background-color: #cdd3ff;
   padding: 20px;
 }
 
@@ -82,7 +82,7 @@ button:hover {
 }
 
 #progress-container {
-  background-color: rgb(228, 8, 8);
+  background-color: rgb(255, 0, 0);
   width: 100%;
   max-width: 500px;
   height: 30px;
@@ -103,6 +103,47 @@ button:hover {
   color: black;
   font-weight: bold;
   transition: width 0.3s ease;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  input[type="number"], button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #progress-container {
+    max-width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px;
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  input[type="number"], button {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  #progress-container {
+    height: 25px;
+  }
 }
 </style>
 </head>
